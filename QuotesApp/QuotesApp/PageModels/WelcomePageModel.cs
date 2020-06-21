@@ -1,10 +1,4 @@
 ﻿using FreshMvvm;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Reactive.Concurrency;
-using System.Runtime.CompilerServices;
-using System.Text;
 using Xamarin.Forms;
 
 namespace QuotesApp.PageModels
@@ -24,7 +18,6 @@ namespace QuotesApp.PageModels
                 RaisePropertyChanged();
             }
         }
-
 
         public WelcomePageModel()
         {

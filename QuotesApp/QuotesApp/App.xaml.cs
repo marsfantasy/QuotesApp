@@ -1,9 +1,6 @@
 ﻿using FreshMvvm;
 using QuotesApp.PageModels;
-using QuotesApp.Pages;
-using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace QuotesApp
 {
