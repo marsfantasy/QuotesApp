@@ -10,8 +10,9 @@ namespace QuotesApp
         {
             InitializeComponent();
 
-            //MainPage = new WelcomPage();
-            MainPage = FreshPageModelResolver.ResolvePageModel<WelcomePageModel>();
+            var mainPage = FreshPageModelResolver.ResolvePageModel<CategoryPageModel>();
+            var navigationContainer = new FreshNavigationContainer(mainPage);
+            MainPage = navigationContainer;
         }
 
         protected override void OnStart()

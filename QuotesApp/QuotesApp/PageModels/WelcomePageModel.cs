@@ -1,4 +1,5 @@
 ﻿using FreshMvvm;
+using QuotesApp.Pages;
 using Xamarin.Forms;
 
 namespace QuotesApp.PageModels
@@ -26,7 +27,15 @@ namespace QuotesApp.PageModels
 
         private void SignIn()
         {
-            var user = UserName;
+            //var user = UserName;
+            //CoreMethods.DisplayAlert("Hi", UserName, "Cancel");
+            CoreMethods.PushPageModel<HomePageModel>(UserName);
+        }
+
+        public override void ReverseInit(object returnedData)
+        {
+            base.ReverseInit(returnedData);
+            var message = returnedData;
         }
     }
 }
