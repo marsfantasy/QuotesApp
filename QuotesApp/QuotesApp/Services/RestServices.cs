@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using QuotesApp.Interfaces;
 using QuotesApp.Models;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace QuotesApp.Services
 {
-    public class RestServices
+    public class RestServices : IRestService
     {
         /// <summary>
         ///

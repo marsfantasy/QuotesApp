@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="QuotesApp.Pages.CategoryPage">
     <ContentPage.Content>
-        <ListView HasUnevenRows="True" ItemsSource="{Binding Categories}">
+        <ListView HasUnevenRows="True" ItemsSource="{Binding Categories}" SelectedItem="{Binding SelectedCategory}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

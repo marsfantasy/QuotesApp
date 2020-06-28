@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="QuotesApp.Pages.QuotesListPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView SeparatorVisibility="None" CachingStrategy="RecycleElement" HasUnevenRows="True" ItemsSource="{Binding Quotes}" SelectedItem="{Binding SelectedQuote}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame Margin="5" HasShadow="False"  Padding="20">
+                                <StackLayout>
+                                    <Label HorizontalTextAlignment="Center" FontSize="Medium" TextColor="Black" Text="{Binding Description}" />
+                                    <Label HorizontalTextAlignment="Center" FontSize="Small" TextColor="Black" Text="{Binding Author}" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
